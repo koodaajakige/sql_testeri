@@ -72,7 +72,7 @@ $lask = 0;      //monesko rivi tulostuksessa menossa
 $colnum = 0;    //sarakkeiden lkm
 
 try {
-$tulos = $yhteys->query($syote);
+$tulos = $yhteys->query($syote);    //jos kysely on väärä, ei tulosteta mitään, ei edes virhetekstiä
 
 } catch (PDOException $e) {
 	//echo $e->getMessage();
